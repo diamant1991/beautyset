@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>
+		</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="css/main.css?v=1520500066758">
+	</head>
+	<body>
+		<header class="header">
+			<div class="top-panel">
+				<div class="container">
+					<div class="row no-gutters justify-content-between">
+						<div class="logo top-panel__item"><a href="#"><img src="images/logo.png" title="beautyset"></a></div>
+						<div class="search top-panel__item">
+							<form class="search__form">
+								<button class="search__btn" type="submit"><i class="zmdi zmdi-search"></i></button>
+								<input class="search__field" type="search" placeholder="Поиск по сайту">
+							</form>
+						</div>
+						<div class="phone top-panel__item"><a class="top-panel__btn" href="#"><i class="middle zmdi zmdi-phone phone__icon"></i><span class="middle">+380 93 555-55-55</span></a></div>
+						<div class="get-call top-panel__item"><a class="top-panel__btn" href="#"><i class="middle zmdi zmdi-phone-in-talk get-call__icon"></i><span class="middle">Заказать звонок</span></a></div>
+						<div class="profile top-panel__item"><a class="top-panel__btn" href="#"><i class="middle zmdi zmdi-account-o profile__icon"></i><span class="middle">Вход</span></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<div class="row no-gutters justify-content-between">
+						<div class="catalog-btn header__bottom__item"><a href="#"><i class="middle zmdi zmdi-apps catalog-btn__icon"></i><span class="middle">каталог товаров</span></a></div>
+						<nav class="nav header__bottom__item">
+							<ul>
+								<li class="current"><a href="#">Купить Beauty Set</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Оплата и доставка</a></li>
+								<li><a href="#">О магазине</a></li>
+								<li><a href="#">КОНТАКТЫ</a></li>
+								<li><a href="#">Beauty-школа</a></li>
+							</ul>
+						</nav>
+						<div class="status header__bottom__item">
+							<div class="status__info"><a class="link" href="#"><i class="status__icon middle zmdi zmdi-favorite"></i><span class="middle">Избранное</span><span class="status__count middle">0</span></a></div>
+							<div class="status__info status__info--basket"><a class="link dropdown-btn is-active" href="#" data-drop="#popup-basket"><i class="status__icon middle zmdi zmdi-shopping-basket"></i><span class="middle">Корзина</span><span class="status__count is-active middle">3</span></a>
+								<div class="dropdown-block" id="popup-basket">
+									<h5>Ваша корзина</h5>
+									<div class="popup-basket">
+										<div class="popup-basket__item row no-gutters justify-content-between align-items-center">
+											<div class="popup-basket__img col-md-1"><img src="images/basket-img.png" alt=""></div>
+											<div class="popup-basket__name col-md-7"><a class="link" href="#">Essie Акриловый лак для ногтей</a></div>
+											<div class="popup-basket__count"><a class="count-btn middle" href="#">-</a>
+												<input class="count-field middle" type="text" value="1" readonly><a class="count-btn middle" href="#">+</a>
+											</div>
+										</div>
+										<div class="popup-basket__item row no-gutters justify-content-between align-items-center">
+											<div class="popup-basket__img col-md-1"><img src="images/basket-img.png" alt=""></div>
+											<div class="popup-basket__name col-md-7"><a class="link" href="#">Beauty-сет для ухода за кожей лица №3</a></div>
+											<div class="popup-basket__count"><a class="count-btn middle" href="#">-</a>
+												<input class="count-field middle" type="text" value="1" readonly><a class="count-btn middle" href="#">+</a>
+											</div>
+										</div>
+										<div class="popup-basket__item row no-gutters justify-content-between align-items-center">
+											<h5>Итого</h5>
+											<div class="popup-basket__price"> <span>115 217 </span><span class="currency">&#8372;</span></div>
+										</div><a class="btn btn--dark" href="#">Перейти в корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="row no-gutters justify-content-between">
+					<div class="sidebar">
+						<div class="sidebar__content">
+							<ul class="sidebar__menu">
+								<li><a class="sidebar__btn" href="#">
+										 Ногти<i class="zmdi zmdi-chevron-down sidebar__btn__arrow"></i></a>
+									<ul class="sidebar__dropdown">
+										<li><a href="#">Подпункт 1</a></li>
+										<li><a href="#">аксессуары для ногтей</a></li>
+										<li><a href="#">вспомогательные жидкости</a></li>
+									</ul>
+								</li>
+								<li><a class="sidebar__btn" href="#">
+										 Волосы<i class="zmdi zmdi-chevron-down sidebar__btn__arrow"></i></a>
+									<ul class="sidebar__dropdown">
+										<li><a href="#">Подпункт 1</a></li>
+										<li><a href="#">аксессуары для ногтей</a></li>
+										<li><a href="#">вспомогательные жидкости</a></li>
+									</ul>
+								</li>
+								<li><a class="sidebar__btn" href="#">
+										 Лицо и тело<i class="zmdi zmdi-chevron-down sidebar__btn__arrow"></i></a>
+									<ul class="sidebar__dropdown">
+										<li><a href="#">Подпункт 1</a></li>
+										<li><a href="#">аксессуары для ногтей</a></li>
+										<li><a href="#">вспомогательные жидкости</a></li>
+									</ul>
+								</li>
+								<li><a class="sidebar__btn" href="#">Техника<i class="zmdi zmdi-chevron-down sidebar__btn__arrow"></i></a>
+									<ul class="sidebar__dropdown">
+										<li><a href="#">Подпункт 1</a></li>
+										<li><a href="#">аксессуары для ногтей</a></li>
+										<li><a href="#">вспомогательные жидкости</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content__info">
+						<div class="content__header row no-gutters justify-content-between align-items-center">
+							<h4>Ногти</h4>
+							<div class="sorting"><span>Сортировать по:</span>
+								<select class="sort-select">
+									<option value="">популярности</option>
+									<option value="">вариант 2</option>
+								</select>
+							</div>
+						</div>
+						<div class="catalog">
+							<div class="catalog__list row no-gutters">
+								<div class="catalog__item col-sm is-active"><a href="#">
+										<div class="catalog__img"><img src="images/gel.png" alt=""></div>
+										<div class="catalog__name">Гель для ногтей</div></a></div>
+								<div class="catalog__item col-sm"><a href="#">
+										<div class="catalog__img"><img src="images/gel.png" alt=""/></div>
+										<div class="catalog__name">Гель для ногтей</div></a></div>
+								<div class="catalog__item col-sm"><a href="#">
+										<div class="catalog__img"><img src="images/gel.png" alt=""/></div>
+										<div class="catalog__name">Жидкость для снятия лака</div></a></div>
+								<div class="catalog__item col-sm"><a href="#">
+										<div class="catalog__img"><img src="images/gel.png" alt=""/></div>
+										<div class="catalog__name">Гель для ногтей</div></a></div>
+								<div class="catalog__item col-sm"><a href="#">
+										<div class="catalog__img"><img src="images/gel.png" alt=""/></div>
+										<div class="catalog__name">Гель для ногтей</div></a></div>
+								<div class="catalog__item col-sm"><a href="#">
+										<div class="catalog__img"><img src="images/gel.png" alt=""/></div>
+										<div class="catalog__name">Карандаш для ногтей</div></a></div>
+								<div class="catalog__item col-sm"><a href="#">
+										<div class="catalog__img"><img src="images/gel.png" alt=""/></div>
+										<div class="catalog__name">Гель для ногтей</div></a></div>
+								<div class="catalog__item col-sm"><a href="#">
+										<div class="catalog__img"><img src="images/gel.png" alt=""/></div>
+										<div class="catalog__name">Гель для ногтей</div></a></div>
+								<div class="catalog__item col-sm"><a class="catalog__item__more row no-gutters align-items-center" href="#"> 
+										<div>Смотреть все (+13)</div></a></div>
+							</div>
+							<div class="catalog__filter row no-gutters justify-content-between">
+								<div class="catalog__filter__item"><a class="is-active" href="#">бренд </a></div>
+								<div class="catalog__filter__item"><a href="#">группа товара</a></div>
+								<div class="catalog__filter__item"><a href="#">назначение </a></div>
+								<div class="catalog__filter__item"><a href="#">классификация</a></div>
+								<div class="catalog__filter__item"><a href="#">пол</a></div>
+								<div class="catalog__filter__item"><a href="#">особенности</a></div>
+								<div class="catalog__filter__item"><a href="#">объем</a></div>
+								<div class="catalog__filter__item"><a href="#">сделано в</a></div>
+								<div class="catalog__filter__item"><a href="#">страна</a></div>
+							</div>
+							<div class="alphabet">
+								<ul class="alphabet__list">
+									<li><a class="is-active" href="#">A</a></li>
+									<li><a href="#">B</a></li>
+									<li><a href="#">C</a></li>
+								</ul>
+								<div class="checkboxes row">
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check1"/>
+										<label for="check1"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check2"/>
+										<label for="check2"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check3"/>
+										<label for="check3"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check4"/>
+										<label for="check4"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check5"/>
+										<label for="check5"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check6"/>
+										<label for="check6"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check7"/>
+										<label for="check7"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check8"/>
+										<label for="check8"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check9"/>
+										<label for="check9"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check10"/>
+										<label for="check10"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check11"/>
+										<label for="check11"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check12"/>
+										<label for="check12"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">A.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check13"/>
+										<label for="check13"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check14"/>
+										<label for="check14"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check15"/>
+										<label for="check15"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check16"/>
+										<label for="check16"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check17"/>
+										<label for="check17"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check18"/>
+										<label for="check18"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check19"/>
+										<label for="check19"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check20"/>
+										<label for="check20"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check21"/>
+										<label for="check21"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check22"/>
+										<label for="check22"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check23"/>
+										<label for="check23"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check24"/>
+										<label for="check24"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">B.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check25"/>
+										<label for="check25"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check26"/>
+										<label for="check26"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check27"/>
+										<label for="check27"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check28"/>
+										<label for="check28"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check29"/>
+										<label for="check29"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check30"/>
+										<label for="check30"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check31"/>
+										<label for="check31"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check32"/>
+										<label for="check32"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check33"/>
+										<label for="check33"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C.Sept</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check34"/>
+										<label for="check34"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C-Derma</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check35"/>
+										<label for="check35"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C.P. Durand Parfums</span></label>
+									</div>
+									<div class="checkbox-item col-lg-2">
+										<input type="checkbox" id="check36"/>
+										<label for="check36"><i class="zmdi zmdi-check-square"></i><span class="alphabet-name">C.Sept</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products row no-gutters">
+							<div class="col-elg-3 col-xl-4 col-lg-6">
+								<div class="products__item">
+									<div class="products__item__content">
+										<div class="products__img row no-gutters align-items-center">
+											<div><a href="#"><img src="images/p-img.png" alt=""></a></div>
+										</div>
+										<div class="products__name"> <a class="link" href="#">CND Brisa Color Gel black</a></div>
+										<div class="row no-gutters justify-content-between">
+											<div class="rating"><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star"></i><i class="zmdi zmdi-star"></i></div>
+											<div class="products__status">
+												<div class="status-in"><span>В наличии</span></div>
+											</div>
+										</div>
+										<div class="products__bottom row no-gutters justify-content-between">
+											<div class="price">
+												<div class="price__today"> <span>294</span><span class="currency">&#8372;</span></div>
+											</div>
+											<div class="like"><i class="zmdi zmdi-favorite-outline"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-elg-3 col-xl-4 col-lg-6">
+								<div class="products__item">
+									<div class="products__item__content">
+										<div class="sale-label">-20%</div>
+										<div class="products__img row no-gutters align-items-center">
+											<div><a href="#"><img src="images/p-img.png" alt=""></a></div>
+											<div class="colors">
+												<div class="colors__item">
+													<div class="colors__value" style="background-color: #4b49ab;"></div>
+												</div>
+												<div class="colors__item">
+													<div class="colors__value" style="background-color: #000;"></div>
+												</div>
+												<div class="colors__item">
+													<div class="colors__value" style="background-color: #a633b9;"></div>
+												</div>
+												<div class="colors__item is-active">
+													<div class="colors__value" style="background-color: #bd1320;"></div>
+												</div>
+												<div class="colors__more">
+													<div class="colors__icon"></div>
+													<div class="colors__count">+126</div>
+												</div>
+											</div>
+										</div>
+										<div class="products__name"><a class="link" href="#">Лечебная основа под лак с кальцием</a></div>
+										<div class="row no-gutters justify-content-between">
+											<div class="rating"><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star"></i><i class="zmdi zmdi-star"></i></div>
+											<div class="products__status">
+												<div class="status-in"> <span>Заканчивается</span></div>
+											</div>
+										</div>
+										<div class="products__bottom row no-gutters justify-content-between">
+											<div class="price">
+												<div class="price__today"> <span>294</span><span class="currency">&#8372;</span></div>
+												<div class="price__prev"> <span>480</span><span class="currency">&#8372;</span></div>
+											</div>
+											<div class="like is-active"><i class="zmdi zmdi-favorite"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-elg-3 col-xl-4 col-lg-6">
+								<div class="products__item">
+									<div class="products__item__content">
+										<div class="products__img row no-gutters align-items-center">
+											<div><a href="#"><img src="images/p-img.png" alt=""></a></div>
+										</div>
+										<div class="products__name"> <a class="link" href="#">CND Brisa Color Gel black</a></div>
+										<div class="row no-gutters justify-content-between">
+											<div class="rating"><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star"></i><i class="zmdi zmdi-star"></i></div>
+											<div class="products__status">
+												<div class="status-in"><span>В наличии</span></div>
+											</div>
+										</div>
+										<div class="products__bottom row no-gutters justify-content-between">
+											<div class="price">
+												<div class="price__today"> <span>294</span><span class="currency">&#8372;</span></div>
+											</div>
+											<div class="like"><i class="zmdi zmdi-favorite-outline"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-elg-3 col-xl-4 col-lg-6">
+								<div class="products__item">
+									<div class="products__item__content">
+										<div class="sale-label">-20%</div>
+										<div class="products__img row no-gutters align-items-center">
+											<div><a href="#"><img src="images/p-img.png" alt=""></a></div>
+											<div class="colors">
+												<div class="colors__item">
+													<div class="colors__value" style="background-color: #4b49ab;"></div>
+												</div>
+												<div class="colors__item">
+													<div class="colors__value" style="background-color: #000;"></div>
+												</div>
+												<div class="colors__item">
+													<div class="colors__value" style="background-color: #a633b9;"></div>
+												</div>
+												<div class="colors__item is-active">
+													<div class="colors__value" style="background-color: #bd1320;"></div>
+												</div>
+												<div class="colors__more">
+													<div class="colors__icon"></div>
+													<div class="colors__count">+126</div>
+												</div>
+											</div>
+										</div>
+										<div class="products__name"><a class="link" href="#">Лечебная основа под лак с кальцием</a></div>
+										<div class="row no-gutters justify-content-between">
+											<div class="rating"><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star"></i><i class="zmdi zmdi-star"></i></div>
+											<div class="products__status">
+												<div class="status-in"> <span>Заканчивается</span></div>
+											</div>
+										</div>
+										<div class="products__bottom row no-gutters justify-content-between">
+											<div class="price">
+												<div class="price__today"> <span>294</span><span class="currency">&#8372;</span></div>
+												<div class="price__prev"> <span>480</span><span class="currency">&#8372;</span></div>
+											</div>
+											<div class="like is-active"><i class="zmdi zmdi-favorite"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-elg-3 col-xl-4 col-lg-6">
+								<div class="products__item is-disable">
+									<div class="products__item__content">
+										<div class="products__img row no-gutters align-items-center">
+											<div><a href="#"><img src="images/p-img.png" alt=""></a></div>
+										</div>
+										<div class="products__name"><a class="link" href="#">CND Brisa Color Gel black</a></div>
+										<div class="row no-gutters justify-content-between">
+											<div class="rating"><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star"></i><i class="zmdi zmdi-star"></i></div>
+											<div class="products__status">
+												<div class="status-in"><span>Нет на складе</span></div>
+											</div>
+										</div>
+										<div class="products__bottom row no-gutters justify-content-between">
+											<div class="price">
+												<div class="price__today"> <span>294</span><span class="currency">&#8372;</span></div>
+											</div>
+											<div class="like"><i class="zmdi zmdi-favorite-outline"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-elg-3 col-xl-4 col-lg-6">
+								<div class="products__item is-disable">
+									<div class="products__item__content">
+										<div class="products__img row no-gutters align-items-center">
+											<div><a href="#"><img src="images/p-img.png" alt=""></a></div>
+										</div>
+										<div class="products__name"><a class="link" href="#">CND Brisa Color Gel black</a></div>
+										<div class="row no-gutters justify-content-between">
+											<div class="rating"><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star"></i><i class="zmdi zmdi-star"></i></div>
+											<div class="products__status">
+												<div class="status-in"><span>Нет на складе</span></div>
+											</div>
+										</div>
+										<div class="products__bottom row no-gutters justify-content-between">
+											<div class="price">
+												<div class="price__today"> <span>294</span><span class="currency">&#8372;</span></div>
+											</div>
+											<div class="like"><i class="zmdi zmdi-favorite-outline"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-elg-3 col-xl-4 col-lg-6">
+								<div class="products__item is-disable">
+									<div class="products__item__content">
+										<div class="products__img row no-gutters align-items-center">
+											<div><a href="#"><img src="images/p-img.png" alt=""></a></div>
+										</div>
+										<div class="products__name"><a class="link" href="#">CND Brisa Color Gel black</a></div>
+										<div class="row no-gutters justify-content-between">
+											<div class="rating"><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star"></i><i class="zmdi zmdi-star"></i></div>
+											<div class="products__status">
+												<div class="status-in"><span>Нет на складе</span></div>
+											</div>
+										</div>
+										<div class="products__bottom row no-gutters justify-content-between">
+											<div class="price">
+												<div class="price__today"> <span>294</span><span class="currency">&#8372;</span></div>
+											</div>
+											<div class="like"><i class="zmdi zmdi-favorite-outline"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-elg-3 col-xl-4 col-lg-6">
+								<div class="products__item is-disable">
+									<div class="products__item__content">
+										<div class="products__img row no-gutters align-items-center">
+											<div><a href="#"><img src="images/p-img.png" alt=""></a></div>
+										</div>
+										<div class="products__name"><a class="link" href="#">CND Brisa Color Gel black</a></div>
+										<div class="row no-gutters justify-content-between">
+											<div class="rating"><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star is-active"></i><i class="zmdi zmdi-star"></i><i class="zmdi zmdi-star"></i></div>
+											<div class="products__status">
+												<div class="status-in"><span>Нет на складе</span></div>
+											</div>
+										</div>
+										<div class="products__bottom row no-gutters justify-content-between">
+											<div class="price">
+												<div class="price__today"> <span>294</span><span class="currency">&#8372;</span></div>
+											</div>
+											<div class="like"><i class="zmdi zmdi-favorite-outline"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-btn"><a class="btn btn--white" href="#">Показать еще</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact-form">
+			<div class="container">
+				<div class="contact-form__content">
+					<h2>Задайте нам вопрос</h2>
+					<p class="contact-form__subtitle">Есть у вас остались вопросы, напишите нам, и мы ответим вам в ближайшее время</p>
+					<form class="contact-form__item">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Ваше имя">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Ваш e-mail">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<textarea class="form-control" placeholder="Текст сообщения"></textarea>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="form-group form-group--submit">
+									<button class="btn btn--dark" type="submit">Отправить</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row no-gutters justify-content-between">
+					<div class="footer__item"><img src="images/logo.png" alt=""></div>
+					<div class="footer__item">
+						<ul class="footer__menu footer__menu--uppercase">
+							<li><a href="#">Купить Beauty Set</a></li>
+							<li><a href="#">АкциИ</a></li>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">О магазине</a></li>
+							<li><a href="#">Beauty-школа</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<ul class="footer__menu">
+							<li><a href="#">Вопрос-ответ</a></li>
+							<li><a href="#">Условия возврата</a></li>
+							<li><a href="#">Гарантийные условия</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h6>Контакты</h6>
+						<ul class="footer__contact">
+							<li><i class="zmdi zmdi-phone middle"></i><span class="middle">+380 93 555-55-55</span></li>
+							<li><i class="zmdi zmdi-email middle"></i><span class="middle">hello@beautyset.com.ua</span></li>
+						</ul><a class="btn btn--purple btn--call" href="#"><i class="zmdi zmdi-phone-in-talk middle"></i><span class="middle">Заказать звонок</span></a>
+					</div>
+					<div class="footer__item">
+						<h6>Мы в соцсетях</h6>
+						<ul class="footer__social">
+							<li><a href="#"><i class="zmdi zmdi-facebook middle"></i><span class="middle">Facebook</span></a></li>
+							<li><a href="#"><i class="zmdi zmdi-youtube-play middle"></i><span class="middle">Youtube</span></a></li>
+							<li><a href="#"><i class="zmdi zmdi-instagram middle"></i><span class="middle">Instagram</span></a></li>
+							<li><a href="#"><i class="zmdi zmdi-twitter middle"></i><span class="middle">Twitter</span></a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h6>Принимаем к оплате</h6>
+						<div class="payment"><img src="images/payment.png" alt=""></div>
+						<div class="privacy"><a class="link" href="#">Пользовательское соглашение</a></div>
+					</div>
+					<div class="footer__item">
+						<h6> <span class="middle">Сделано с</span><i class="zmdi zmdi-favorite middle"></i></h6>
+						<div class="develop"><img src="images/agentcy.png" alt=""></div>
+						<div class="copyright">BeautySet © 2017</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor.js?v=1520500066760"></script>
+		<script src="js/main.js?v=1520500066760"></script>
+	</body>
+</html>

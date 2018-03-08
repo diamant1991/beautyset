@@ -1,0 +1,57 @@
+@import "variables";
+
+.btn{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px;
+	min-width: 215px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: $bold;
+	cursor: pointer;
+	outline: 0;
+
+	&--white{
+		color: $color-purple;
+		border: 1px solid #e0e0e0;
+
+		&:hover{
+			background: $color-purple;
+			border-color: $color-purple;
+			color: #fff;
+		}
+	}
+	&--dark{
+		background: $color-main;
+		color: #fff;
+		border: 0;
+		min-width: 270px;
+
+		&:hover{
+			background: $color-purple;
+			border-color: $color-purple;
+			color: #fff;
+		}
+	}
+	&--purple{
+		color: $color-main;
+		border: 1px solid $color-purple;
+		min-width: 200px;
+	}
+	&--call{
+		i{
+			color: #d00071;
+			margin-right: 10px;
+		}
+		&:hover{
+			background: $color-main;
+			color: #fff;
+			border-color: $color-main;
+
+			i{
+				color: #fff;
+			}
+		}
+	}
+}

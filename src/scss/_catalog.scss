@@ -1,0 +1,114 @@
+@import "variables";
+
+.catalog{
+	border: 1px solid #f3f3f3;
+	border-top: 0;
+
+	&__item{
+		text-align: center;
+		border-right: 1px solid #f3f3f3;
+		position: relative;
+		height: 125px;
+		font-family: $regular;
+
+		&:last-child{
+			border-right: 0;
+		}
+
+		&.is-active,
+		&:hover{
+			.catalog__name{
+				color: $color-purple;
+			}
+			&:after{
+				content: "";
+				display: block;
+				position: absolute;
+				z-index: 2;
+				bottom: 0;
+				width: 100%;
+				height: 2px;
+				background: $color-purple;
+			}
+		}
+		&__more{
+			height: 100%;
+			color: $color-purple;
+
+			> div{
+				width: 100%;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}
+	&__img{
+		height: 90px;
+	}
+	&__name{
+		color: #000;
+		font-size: 12px;
+		font-family: $regular;
+		height: 35px;
+		overflow: hidden;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	&__filter{
+		padding: 20px 50px;
+		border-bottom: 1px solid #f3f3f3;
+		font-family: $regular;
+
+		&__item{
+			text-align: center;
+			font-size: 13px;
+			text-transform: uppercase;
+
+			a{
+				color: $color-main;
+
+				&.is-active,
+				&:hover{
+					color: $color-purple;
+				}
+			}
+		}
+	}
+}
+.alphabet{
+	font-family: $regular;
+	padding: 20px;
+	padding-top: 0;
+
+	&__list{
+		text-transform: uppercase;
+		padding: 25px 0;
+		font-size: 13px;
+
+		li{
+			display: inline-block;
+			vertical-align: top;
+
+			a{
+				color: $color-main;
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				display: block;
+				text-align: center;
+
+				&:hover,
+				&.is-active{
+					background: $color-purple;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 1399px){
+	.catalog__filter{
+		padding: 20px;
+	}
+}

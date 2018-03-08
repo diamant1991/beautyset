@@ -1,0 +1,65 @@
+@import "variables";
+
+.footer{
+	padding: 50px 0;
+
+	&__menu{
+		li{
+			+ li{
+				margin-top: 20px;
+			}
+			&:hover,
+			&.is-current{
+				a{
+					color: $color-purple;
+				}
+			}
+		}
+		a{
+			color: $color-main;
+		}
+		&--uppercase{
+			text-transform: uppercase;
+		}
+	}
+	&__contact{
+		margin-bottom: 35px;
+
+		li{
+			+ li{
+				margin-top: 10px;
+			}
+		}
+		i{
+			color: #d00071;
+			margin-right: 10px;
+		}
+	}
+	&__social{
+		a{
+			color: $color-main;
+
+			&:hover{
+				color: $color-purple;
+			}
+		}
+		i{
+			color: #9c9c9c;
+			width: 18px;
+			text-align: center;
+			font-size: 18px;
+			margin-right: 10px;
+		}
+		li{
+			+ li{
+				margin-top: 19px;
+			}
+		}
+	}
+}
+.privacy{
+	margin-top: 83px;
+}
+.copyright{
+	margin-top: 74px;
+}

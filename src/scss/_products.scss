@@ -1,0 +1,176 @@
+@import "variables";
+
+.products{
+
+	&__bottom{
+		margin-top: 15px;
+	}
+
+	&__item{
+		padding: 40px 0;
+		border-bottom: 1px solid #f3f3f3;
+		font-family: $regular;
+
+		&__content{
+			border-left: 1px solid #f3f3f3;
+			border-right: 1px solid #f3f3f3;
+			padding: 0 25px;
+			position: relative;
+		}
+		&.is-disable{
+			.products__name,
+			.like,
+			.price__today,
+			.price__prev{
+				color: #bebebe;
+			}
+			.status-in{
+				&:before{
+					background: #bebebe;
+				}
+			}
+		}
+	}
+	&__img{
+		height: 260px;
+		position: relative;
+
+		> div{
+			text-align: center;
+			width: 100%;
+		}
+	}
+	&__name{
+		font-size: 16px;
+		font-family: $bold;
+		color: $color-main;
+		height: 55px;
+		overflow: hidden;
+		line-height: 1.1;
+	}
+}
+.rating{
+	i{
+		font-size: 12px;
+		color: #efefef;
+		margin: 0 1px;
+
+		&.is-active{
+			color: $color-purple;
+		}
+	}
+}
+.status-in{
+	color: #bebebe;
+	font-size: 12px;
+
+	span{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&:before{
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		border-radius: 50%;
+		width: 5px;
+		height: 5px;
+		background: $color-purple;
+		margin-right: 5px;
+	}
+}
+.price{
+	font-family: $bold;
+
+	&__today{
+		font-size: 20px;
+		color: $color-main;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__prev{
+		font-size: 16px;
+		color: #bebebe;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 5px;
+		text-decoration: line-through;
+		position: relative;
+		top: 1px;
+	}
+}
+.like{
+	font-size: 21px;
+
+	&.is-active{
+		color: $color-purple;
+	}
+}
+.sale-label{
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+	background: $color-main;
+	font-size: 10px;
+	font-family: $regular;
+	position: absolute;
+	z-index: 2;
+	left: 25px;
+	top: 10px;
+}
+.colors{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	z-index: 2;
+	text-align: center;
+
+	&__item{
+		display: inline-block;
+		vertical-align: middle;
+		padding: 5px;
+		border: 1px solid transparent;
+		cursor: pointer;
+
+		&:hover,
+		&.is-active{
+			border-color: #e8e8e8;
+		}
+	}
+	&__value{
+		width: 15px;
+		height: 25px;
+		border-radius: 10px;
+	}
+	&__icon{
+		width: 22px;
+		height: 22px;
+		background: url(../images/color.png)no-repeat;
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		top: 0;
+	}
+	&__more{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 25px;
+		background: #f3f3f3;
+		height: 22px;
+		line-height: 23px;
+		padding-right: 10px;
+		font-size: 12px;
+		border-radius: 25px;
+		margin-left: 5px;
+		cursor: pointer;
+	}
+}
+.more-btn{
+	text-align: center;
+	margin: 45px 0;
+}

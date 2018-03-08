@@ -1,0 +1,81 @@
+header.header
+	.top-panel
+		.container
+			.row.no-gutters.justify-content-between
+				.logo.top-panel__item
+					a(href="#")
+						img(src="images/logo.png", title="beautyset")
+				.search.top-panel__item
+					form.search__form
+						button(type="submit").search__btn
+							i.zmdi.zmdi-search
+						input(type="search", placeholder="Поиск по сайту").search__field
+				.phone.top-panel__item
+					a(href="#").top-panel__btn
+						i.middle.zmdi.zmdi-phone.phone__icon
+						span.middle +380 93 555-55-55
+				.get-call.top-panel__item
+					a(href="#").top-panel__btn
+						i.middle.zmdi.zmdi-phone-in-talk.get-call__icon
+						span.middle Заказать звонок
+				.profile.top-panel__item
+					a(href="#").top-panel__btn
+						i.middle.zmdi.zmdi-account-o.profile__icon
+						span.middle Вход
+	.header__bottom
+		.container
+			.row.no-gutters.justify-content-between
+				.catalog-btn.header__bottom__item
+					a(href="#")
+						i.middle.zmdi.zmdi-apps.catalog-btn__icon
+						span.middle каталог товаров
+				nav.nav.header__bottom__item
+					ul
+						li.current
+							a(href="#") Купить Beauty Set
+						+nav-item('Акции')
+						+nav-item('Оплата и доставка')
+						+nav-item('О магазине')
+						+nav-item('КОНТАКТЫ')
+						+nav-item('Beauty-школа')
+				.status.header__bottom__item
+					.status__info
+						a(href="#").link
+							i.status__icon.middle.zmdi.zmdi-favorite
+							span.middle Избранное
+							span.status__count.middle 0
+					.status__info.status__info--basket
+						a(href="#", data-drop="#popup-basket").link.dropdown-btn.is-active
+							i.status__icon.middle.zmdi.zmdi-shopping-basket
+							span.middle Корзина
+							span.status__count.is-active.middle 3
+						.dropdown-block#popup-basket
+							h5 Ваша корзина
+							.popup-basket
+								.popup-basket__item.row.no-gutters.justify-content-between.align-items-center
+									.popup-basket__img.col-md-1
+										img(src="images/basket-img.png", alt="")
+									.popup-basket__name.col-md-7
+										a(href="#").link
+											| Essie Акриловый лак для ногтей
+									.popup-basket__count
+										a(href="#").count-btn.middle -
+										input(type="text", value="1" readonly).count-field.middle
+										a(href="#").count-btn.middle +
+								.popup-basket__item.row.no-gutters.justify-content-between.align-items-center
+									.popup-basket__img.col-md-1
+										img(src="images/basket-img.png", alt="")
+									.popup-basket__name.col-md-7
+										a(href="#").link
+											| Beauty-сет для ухода за кожей лица №3
+									.popup-basket__count
+										a(href="#").count-btn.middle -
+										input(type="text", value="1" readonly).count-field.middle
+										a(href="#").count-btn.middle +
+								.popup-basket__item.row.no-gutters.justify-content-between.align-items-center
+									h5 Итого
+									.popup-basket__price 
+										span 115 217 
+										span.currency &#8372;
+								a(href="#").btn.btn--dark Перейти в корзину
+

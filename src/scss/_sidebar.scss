@@ -1,0 +1,72 @@
+@import "variables";
+
+.sidebar{
+	width: 270px;
+
+	&__content{
+		background: #fff;
+		border: 5px solid #e8f3ff;
+		padding: 45px 35px;
+		padding-bottom: 25px;
+	}
+
+	&__menu{
+		padding-left: 45px;
+
+		> li{
+			position: relative;
+		}
+	}
+	&__btn{
+		text-transform: uppercase;
+		font-size: 13px;
+		color: $color-main;
+		font-family: $bold;
+		position: relative;
+		display: block;
+		margin-bottom: 25px;
+		max-width: 110px;
+
+		&__arrow{
+			color: $color-purple;
+			position: absolute;
+			z-index: 2;
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+
+		&:hover,
+		&.is-active{
+			color: $color-purple;
+		}
+
+		&:before{
+			content: "";
+			width: 25px;
+			height: 1px;
+			background: $color-purple;
+			position: absolute;
+			z-index: 2;
+			left: -45px;
+			top: 50%;
+			margin-top: -0.5px;
+		}
+	}
+	&__dropdown{
+		text-transform: uppercase;
+		display: none;
+
+		a{
+			font-size: 13px;
+			color: $color-main;
+
+			&:hover{
+				color: $color-purple;
+			}
+		}
+		li{
+			margin-bottom: 18px;
+		}
+	}
+}

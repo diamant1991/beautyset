@@ -1,0 +1,6 @@
+mixin checkbox(type, id, name, checked)
+	.checkbox-item.col-lg-2
+		input(type=type id=id checked=checked)&attributes(attributes)
+		label(for=id)
+			i.zmdi.zmdi-check-square
+			span.alphabet-name= name
