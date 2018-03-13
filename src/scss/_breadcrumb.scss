@@ -1,0 +1,30 @@
+.breadcrumb{
+	margin-bottom: 40px;
+	font-size: 12px;
+	font-family: $regular;
+
+	li{
+		display: inline-block;
+		vertical-align: middle;
+
+		&:after{
+			content: "/";
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 15px;
+			color: #d0d0d0;
+		}
+		&:last-child{
+			&:after{
+				content: none;
+			}
+		}
+	}
+	a{
+		color: $color-purple;
+
+		&:hover{
+			border-bottom: 1px solid $color-purple;
+		}
+	}
+}

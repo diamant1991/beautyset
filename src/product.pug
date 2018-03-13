@@ -1,0 +1,259 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/header
+	.content
+		.container
+			.breadcrumb
+				ul
+					+nav-item('Главная')
+					+nav-item('Каталог товаров')
+					+nav-item('Волосы')
+					+nav-item('Окрашивание')
+					li Краски для волос
+			.row.no-gutters.justify-content-between
+				include pug/sidebar
+				.content__info
+					.product.row
+						.col-xl-6
+							.product__block
+								a(data-fancybox, href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").video-btn
+									i.zmdi.zmdi-play-circle.middle
+									span.middle Видеообзор
+								.label.label--sale Акция
+								.product-slider
+									div
+										.product__img.row.no-gutters.align-items-center
+											div
+												img(src="images/product.png", alt="")
+									div
+										.product__img.row.no-gutters.align-items-center
+											div
+												img(src="http://via.placeholder.com/300x350", alt="")
+									div
+										.product__img.row.no-gutters.align-items-center
+											div
+												img(src="http://via.placeholder.com/200x350", alt="")
+								.thumb
+									ul.thumb__list
+										li
+											.thumb__item.row.no-gutters.align-items-center
+												div
+													img(src="images/thumb1.png", alt="")
+										li
+											.thumb__item.row.no-gutters.align-items-center
+												div
+													img(src="images/thumb2.png", alt="")
+										li
+											.thumb__item.row.no-gutters.align-items-center
+												div
+													i.zmdi.zmdi-play-circle
+						.col-xl-6
+							.product__block
+								.product__info
+									.product__info__header.row.no-gutters.justify-content-between
+										.status-in
+											span В наличии
+										.articul Артикул: 12345679890
+									h2.product-title
+										| Красящий бальзам для волос
+										span  L'Oreal Paris Colorista Washout 1-2 Week
+									.rating.rating--product
+										.rating__star.middle
+											i.zmdi.zmdi-star.is-active
+											i.zmdi.zmdi-star.is-active
+											i.zmdi.zmdi-star.is-active
+											i.zmdi.zmdi-star
+											i.zmdi.zmdi-star
+										.rating__count.middle
+											a(href="#") 123 отзыва
+									.product__descr
+										ul
+											li Возраст: 18+
+											li Тип волос: все типы волос
+											li Сделано в: Франция
+										a(href="#").purple-link Описание товара
+									.product__choice.row
+										.col-xl-6
+											.product__choice__title Выберите цвет:
+											.product__colors
+												.colors__item
+													.colors__value.colors__value--img(style="background-image: url(images/color-type.png)")
+												.colors__item
+													.colors__value.colors__value--img(style="background-image: url(images/color-type.png)")
+												.colors__item
+													.colors__value.colors__value--img(style="background-image: url(images/color-type.png)")
+												.colors__item.is-active
+													.colors__value.colors__value--img(style="background-image: url(images/color-type.png)")
+												.colors__more
+													.colors__icon
+													.colors__count +126
+										.col-xl-6
+											.product__choice__title Выберите размер:
+											.product__size
+												a(href="#").product__size__item.middle.is-active 50 ml
+												a(href="#").product__size__item.middle 100 ml
+												a(href="#").product__size__item.middle 150 ml
+									.product__footer.row.no-gutters.justify-content-between
+										.price
+											.price__today.price__today--large
+												span 294
+												span.currency &#8372;
+											.price__prev.price__prev--large
+												span 480
+												span.currency &#8372;
+											.product__btn
+												a(href="#").btn.btn--dark уведомить о наличии
+										.like.is-active
+											i.zmdi.zmdi-favorite
+					.item-block
+						h2.item-block__title Вместе дешевле
+						.products.row.no-gutters.products--card
+							.col-elg-3.col-xl-6.col-lg-6
+								.products__item
+									.products__item__content
+										.products__img.row.no-gutters.align-items-center
+											div
+												a(href="#")
+													img(src="images/p-img.png", alt="")
+										.products__name 
+											a(href="#").link CND Brisa Color Gel black
+										.row.no-gutters.justify-content-between
+											include pug/rating
+										.products__bottom.row.no-gutters.justify-content-between
+											.price
+												.price__today 
+													span 294
+													span.currency &#8372;
+												.price__prev 
+													span 480
+													span.currency &#8372;
+										div.products__economy
+											| Вы экономите 320 &#8372;
+							.col-elg-3.col-xl-6.col-lg-6
+								.products__item
+									.products__item__content.products-plus.row.no-gutters.align-items-center
+										i.zmdi.zmdi-plus-circle.products-plus__icon
+										div
+											.products-plus__item
+												.products__img.products__img--small.row.no-gutters.align-items-center
+													div
+														a(href="#")
+															img(src="images/p-small.png", alt="")
+												.products-plus__name
+													a(href="#").link
+														| Бальзам дренажный массажный Decleor
+											.products-plus__item
+												.products__img.products__img--small.row.no-gutters.align-items-center
+													div
+														a(href="#")
+															img(src="images/p-small.png", alt="")
+												.products-plus__name
+													a(href="#").link
+														| Бальзам дренажный массажный Decleor
+							.col-elg-3.col-xl-6.col-lg-6
+								.products__item
+									.products__item__content
+										.products__img.row.no-gutters.align-items-center
+											div
+												a(href="#")
+													img(src="images/p-img.png", alt="")
+										.products__name 
+											a(href="#").link CND Brisa Color Gel black
+										.row.no-gutters.justify-content-between
+											include pug/rating
+										.products__bottom.row.no-gutters.justify-content-between
+											.price
+												.price__today 
+													span 294
+													span.currency &#8372;
+												.price__prev 
+													span 480
+													span.currency &#8372;
+										div.products__economy
+											| Вы экономите 320 &#8372;
+							.col-elg-3.col-xl-6.col-lg-6
+								.products__item
+									.products__item__content.products-plus.row.no-gutters.align-items-center
+										i.zmdi.zmdi-plus-circle.products-plus__icon
+										div
+											.products-plus__item
+												.products__img.products__img--small.row.no-gutters.align-items-center
+													div
+														a(href="#")
+															img(src="images/p-small.png", alt="")
+												.products-plus__name
+													a(href="#").link
+														| Бальзам дренажный массажный Decleor
+					.item-block
+						h2.item-block__title Описание товара
+						.row.justify-content-between
+							.col-xl-5.text-block
+								h6 ИНФОРМАЦИЯ О ТОВАРЕ:
+								p
+									| Всемирно известный бренд L'Oreal Paris продолжает радовать своих поклонниц качественными средствами. Представив красящий бальзам Colorista Washout 1-2 Week, производитель позаботился о том, чтобы каждая женщина имела возможность примерить на себя яркий и смелый образ.
+								p
+									| Палитра, предложенная французским брендом, очень красочная и оригинальная. Украсьте свою прическу  прядью оттенка паприка, покрасьте кончики в удивительный цвет бирюзовой волны, экспериментируйте с  оттенками – ваши старания непременно приведут в восторг всех окружающих. Бальзам обеспечивает временный эффект – пигмент уходит после 2-3 смываний, становясь с каждым разом менее выраженным. Средство не требует смешивания, не содержит оксидантов и аммиака, проявляется уже через 15 минут. 
+							.col-xl-6.text-block.row
+								.col-xl-6
+									h6 СПОСОБ ПРИМЕНЕНИЯ:
+									p
+										| Нанесите краску на волосы цвета блонд или осветлённые,подождите 15 минут, а для более насыщенного и продолжительного результата – до 20 минут.,нанесите разные цвета, создайте свой образ,чтобы ускорить обесцвечивание, используйте шампунь Colorista Fader.
+								.col-xl-6
+									h6 Состав:
+									p 
+										| Aqua / Water, Cetearyl Alcohol, Behentrimonium Chloride, Amodimethicone, Cetyl Alcohol, Hc Blue No. 15, C12-15 Alkyl Benzoate, Guar Hydroxypropyltrimonium Chloride, Hydroxyethylcellulose, Sodium Hydroxide, Trideceth-6, Chlorhexidine Digluconate, Fumaric Acid, Isopropyl Alcohol, Basic Yellow 57, Citric Acid, Cetrimonium Chloride, (Fil C192632/1).
+					.item-block
+						h2.item-block__title Отзывы о товаре
+						.review
+							div
+								.review__item.row
+									.col-xl-3
+										.review__name АНАСТАСИЯ, Черкассы
+										.review__date 15 ноября 2017
+										include pug/rating
+									.col-xl-9.text-block
+										p
+											| Взяла пурпурный. И это уже третий раз когда я буду им краситься. Во-первых, цвет просто обалденный. Во-вторых, отлично взялся даже несмотря на то, что было тонирование хной полгода назад. В-третьих, очень красиво вымывается. У меня свои волосы темно-русые, был балаяж, тонированный хной, перед тонированием бальзамом высветлили повторно, но не до белого, а до золотисто-рыжего. Поэтому когда с моих рыжих волос начал вымываться пурпурный цвет, они сначала были пепельно-сиреневые, а теперь рыжевато-розовые. На кончиках, где сильнее всего осветлились - пепельно-розовые.
+							div
+								.review__item.row
+									.col-xl-3
+										.review__name АНАСТАСИЯ, Черкассы
+										.review__date 15 ноября 2017
+										include pug/rating
+									.col-xl-9.text-block
+										p
+											| Взяла пурпурный. И это уже третий раз когда я буду им краситься. Во-первых, цвет просто обалденный. Во-вторых, отлично взялся даже несмотря на то, что было тонирование хной полгода назад. В-третьих, очень красиво вымывается. У меня свои волосы темно-русые, был балаяж, тонированный хной, перед тонированием бальзамом высветлили повторно, но не до белого, а до золотисто-рыжего. Поэтому когда с моих рыжих волос начал вымываться пурпурный цвет, они сначала были пепельно-сиреневые, а теперь рыжевато-розовые. На кончиках, где сильнее всего осветлились - пепельно-розовые.
+						.review__btn
+							.review__btn__item.review-prev.d-inline-block
+								i.zmdi.zmdi-chevron-left
+							.review__btn__item.review-next.d-inline-block
+								i.zmdi.zmdi-chevron-right
+						.btn-item
+							a(href="#").btn.btn--dark Оставить отзыв
+					.item-block
+						h2.item-block__title Похожие товары
+						.products.products--card
+							.similar-carousel
+								div
+									include pug/product-basic
+								div
+									include pug/product-color
+								div
+									include pug/product-basic
+								div
+									include pug/product-basic
+								div
+									include pug/product-color
+								div
+									include pug/product-basic
+	include pug/form
+	include pug/footer
+
+
+										
+										
+										
+

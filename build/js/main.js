@@ -76,5 +76,37 @@ $(document).mouseup(function (e) {
   }
 });
 
+$('.product-slider').slick({
+  arrows: false,
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  customPaging: function customPaging(slider, i) {
+    return '<button class="tab">' + $('.thumb__list li:nth-child(' + (i + 1) + ')').html() + '</button>';
+  }
+});
+
+$('.review').slick({
+  arrows: false,
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+$('.review-prev').click(function () {
+  $('.review').slick('slickPrev');
+});
+$('.review-next').click(function () {
+  $('.review').slick('slickNext');
+});
+
+$('.similar-carousel').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: false,
+  nextArrow: '<button class="similar-btn similar-btn--next"><i class="zmdi zmdi-chevron-right"></i></button>',
+  prevArrow: '<button class="similar-btn similar-btn--prev"><i class="zmdi zmdi-chevron-left"></i></button>'
+});
+
 }());
 //# sourceMappingURL=main.js.map
